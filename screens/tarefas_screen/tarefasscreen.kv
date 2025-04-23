@@ -1,5 +1,9 @@
 <TarefasScreen>
 
+
+    MDList:
+        id: lista_tarefas
+
     MDTopAppBar:
         title: 'Minhas Tarefas'
         halign: 'center'
@@ -14,6 +18,7 @@
         pos_hint: {'center_x': 0.5, 'center_y': 0.7}
 
     MDTextField:
+        id: addtarefa
         hint_text: 'Tarefa :'
         pos_hint: {'center_x': 0.5, 'center_y': 0.4}
         size_hint_x: 0.8
@@ -26,3 +31,4 @@
         bold: True
         pos_hint: {'center_x': 0.5, 'center_y': 0.2}
         md_bg_color: 0,0,0,1
+        on_release: root.adicionar_tarefas()
