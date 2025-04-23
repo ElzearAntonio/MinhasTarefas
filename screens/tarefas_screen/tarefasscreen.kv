@@ -1,7 +1,7 @@
-<LoginScreen>
+<TarefasScreen>
 
     MDTopAppBar:
-        title: 'Login'
+        title: 'Minhas Tarefas'
         halign: 'center'
         elevation: 5
         pos_hint: {'top': 1}
@@ -9,28 +9,20 @@
         md_bg_color: 0,0,0,1
 
     Image:
-        source:'avatar.png'
+        source:'clipboard.png'
         size_hint: (0.2, 0.2)
         pos_hint: {'center_x': 0.5, 'center_y': 0.7}
 
     MDTextField:
-        text: 'Email :'
-        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
-        size_hint_x: 0.8
-        icon_left: 'email'
-
-    MDTextField:
-        text: 'Senha :'
+        hint_text: 'Tarefa :'
         pos_hint: {'center_x': 0.5, 'center_y': 0.4}
         size_hint_x: 0.8
-        icon_left: 'key'
-
+        icon_left: 'book'
 
     MDRaisedButton:
-        text: 'Entrar'
+        text: 'Registrar'
         font_size: 15
         elevation: 5
         bold: True
-        pos_hint: {'center_x': 0.5, 'center_y': 0.1}
+        pos_hint: {'center_x': 0.5, 'center_y': 0.2}
         md_bg_color: 0,0,0,1
-        on_press: root.ir_para_tela_tarefas()

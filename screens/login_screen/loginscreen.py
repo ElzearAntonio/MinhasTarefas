@@ -3,4 +3,5 @@ from  kivymd.uix.toolbar import MDTopAppBar
 
 
 class LoginScreen(MDScreen):
-    pass
+    def ir_para_tela_tarefas(self):
+        self.manager.current = ('tela2')
