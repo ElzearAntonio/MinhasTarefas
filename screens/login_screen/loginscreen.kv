@@ -1,0 +1,17 @@
+<LoginScreen>
+
+    MDTopAppBar:
+        elevation: 5
+        pos_hint: {'top': 1}
+        left_action_items: [['arrow-left', lambda x: root.callback()]]
+
+    Image:
+        source:'clipboard.png'
+        size_hint: (0.2, 0.2)
+        pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+
+    MDTextField:
+        hint_text: 'Tarefa'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        size_hint_x: 0.8
+        icon_left: 'book'
