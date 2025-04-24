@@ -35,7 +35,7 @@ class LiveApp(MDApp, App):
 
 
     def build_app(self):
-
+        self.theme_cls.theme_style = 'Dark'
         return Factory.MainScreenManager()
 
 
