@@ -4,11 +4,11 @@ Este é um trabalho de programação python, utilizando o kivymd dos alunos Elze
 
 ## Sobre o projeto
 
-O projeto foi pensado para ser um app estilo agenda para anotar tarefas para se fazer. Nele há um sistema de login básico, onde existe somente 1 usuário (Roger senha 123456) que deve ser acessado para se conseguir adicionar, remover ou visualizar as tarefas colocadas.
+O projeto foi pensado para ser um app estilo agenda para anotar tarefas para se fazer. Nele há um sistema de login básico, onde não existem usuários, porém deverá ser acessado por qualquer nome de usuário e qualquer senha, onde os campos de senha deverão ser iguais. Deve ser acessado para se conseguir adicionar, remover ou visualizar as tarefas presentes.
 
 ### Uso do app
 
-O uso do app é bem simples, basta logar com o usuário fixo "Roger" e senha "123456", após isso, aprecerá a página da agenda onde é possivel adicionar novos registros (com um tipo de prioridade, como por exemplo: registro Lavar a Louça, prioridade Média). No topo, há um botão com ícone de lixeira, onde todos os registros são apagados.
+O uso do app é bem simples, basta logar com qualquer usuario ou senha, após isso, aprecerá a página da agenda onde é possivel adicionar novos registros (com um tipo de prioridade, como por exemplo: registro Lavar a Louça, prioridade Média). No topo, há um botão com ícone de lixeira, onde todos os registros são apagados.
 
 ### Programação do app
 
