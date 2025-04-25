@@ -5,7 +5,7 @@ from kivymd.app import MDApp
 from kaki.app import App
 from kivy.factory import Factory
 
-
+from screens.tarefas_screen.tarefasscreen import salvar_tarefas
 
 
 # main app class for kaki app with kivymd modules
@@ -38,7 +38,8 @@ class LiveApp(MDApp, App):
         self.theme_cls.theme_style = 'Dark'
         return Factory.MainScreenManager()
 
-
+    def on_stop(self):
+        salvar_tarefas()
 
 
 # finally, run the app

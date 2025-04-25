@@ -1,5 +1,4 @@
-<TarefasScreen>
-
+<TarefasScreen>:
     FloatLayout:
         orientation: 'vertical'
         MDTopAppBar:
@@ -7,7 +6,8 @@
             halign: 'center'
             elevation: 5
             pos_hint: {'top': 1}
-            left_action_items: [['arrow-left', lambda x: root.callback()]]
+            left_action_items: [['arrow-left', lambda x: root.voltar_tela()]]
+            right_action_items: [['trash-can', lambda x: root.deletar_tarefas()]]
             md_bg_color: 1,1,1,1
             specific_text_color: 0,0,0,1
 
@@ -17,11 +17,8 @@
             MDList:
                 id: lista_tarefas
 
-
-
-
         Image:
-            source:'clipboard.png'
+            source: 'clipboard.png'
             size_hint: (0.05, 0.05)
             pos: 1820, 925
 
@@ -35,6 +32,12 @@
             size_hint_x: 0.8
             icon_left: 'book'
 
+        MDTextField:
+            id: prioridade_tarefa
+            hint_text: 'Prioridade (ex: Alta)'
+            pos_hint: {'center_x': 0.75, 'center_y': 0.05}
+            size_hint_x: 0.2
+
     MDRaisedButton:
         text: 'Registrar'
         text_color: 0,0,0,1
@@ -45,5 +48,3 @@
         size_hint_x: 0.1
         md_bg_color: 1,1,1,1
         on_release: root.adicionar_tarefas()
-
-
